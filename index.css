@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* main div code */
+.main_div {
+  width: 98vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+}
+/* center div code */
+
+.center_div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+/*  image code */
+
+img {
+  padding: 20px;
+  border-radius: 30px;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+img:hover {
+  transform: scale(1.1);
+}
+
+/* NOTE:: SCROLLBAR ALL PROPERTY IS NOT SUPPORT IN FIRE FOX SHOW PLEASE USE ANOTHER BROWSER */
+
+/* scrollbar code */
+
+.center_div::-webkit-scrollbar {
+  width: 10px;
+}
+
+/*scrollbar tract code */
+
+.center_div::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  border: 2px solid #130f40;
+  background: #f9ca24;
+}
+
+/* scrollbar thumb code */
+.center_div::-webkit-scrollbar-thumb {
+  background: #130f40;
+  border-radius: 10px;
+}
